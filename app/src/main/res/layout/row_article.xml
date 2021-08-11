@@ -35,18 +35,19 @@
 
         <TextView
             android:id="@+id/articleNameText"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:text="이름"
             android:textColor="#000"
             app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/articleCreateDateTv"
             app:layout_constraintStart_toEndOf="@+id/articleImage"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/articleCreateDateTv"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginRight="5dp"
             android:text="2021-08-11T10:06:40.680Z"
