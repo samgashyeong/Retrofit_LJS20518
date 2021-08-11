@@ -32,7 +32,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         recyclerView = findViewById(R.id.recyclerView);
-        progressBar = findViewById(R.id.progressbar);
         getArticleData();
     }
 
@@ -61,8 +60,6 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onResponse(Call<Data> call, Response<Data> response) {
                 Data data = response.body();
-
-                Log.d(TAG, "onResponse: data.articles :"+data.articles);
                 recyclerView.setAdapter(new ArticleAdapter(data.articles, MainActivity.this));
 
             }

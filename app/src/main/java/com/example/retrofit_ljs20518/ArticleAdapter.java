@@ -47,7 +47,7 @@ public class ArticleAdapter extends RecyclerView.Adapter<ArticleAdapter.ViewHold
         holder.articleNameText.setText(article.author.username);
         holder.articleTitleText.setText(article.title);
         holder.articleBodyText.setText(article.body);
-        holder.articleLikeText.setText(String.valueOf(article.favoritesCount));
+        holder.articleLikeText.setText("좋아요 "+article.favoritesCount+"개");
         holder.articleCreateDateText.setText(article.createdAt);
     }
 
